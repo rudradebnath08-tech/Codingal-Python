@@ -8,8 +8,8 @@ def triangle_area(base, height):
     return 0.5 * base * height
 
 print("Area of a rectangle: ")
-l = int(input("Enter length of rectangle : "))
-b = int(input("Enter breadth of rectangle : "))
+l = int(input("Enter length of the rectangle : "))
+b = int(input("Enter breadth of the rectangle : "))
 print("Area(Rectangle) = ", rectangle_area(l, b))
 
 print("Area of a Circle: ")
@@ -20,3 +20,4 @@ print("Area of a triangle: ")
 b = int(input("Enter base of the triangle: "))
 h = int(input("Enter height of the triangle : "))
 print("Area(Triangle) = ", triangle_area(b, h))
+
