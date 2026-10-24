@@ -3,7 +3,7 @@ class Cricket:
         self.__player = player
         self.__score = score
 
-    def into(self):
+    def info(self):
         print(f"Cricket - Player: {self.__player}, Score: {self.__score}")
 
     def play(self):
@@ -52,7 +52,7 @@ for sport in (cricket, football):
 
 
 print("- - - Direct change attempt - - -")
-cricket.__score = 999
+cricket.get_score = 999
 print(f"get_score() still shows: {cricket.get._score()}")
 
 print("\n- - - Updating Scores - - -")
