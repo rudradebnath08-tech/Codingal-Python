@@ -15,7 +15,7 @@ cricket = Cricket("Rohit", 85)
 
 cricket.__score = 999
 print("=== Sports Scoreboard ===")
-for sport in (cricket, football):
+for sport in (cricket):
     sport.info()
     sport.play()
     print()
