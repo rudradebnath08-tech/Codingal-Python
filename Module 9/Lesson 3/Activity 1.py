@@ -1,6 +1,6 @@
 import os
 print("=== Science Notes ===")
-with open("science-notrs.txt", "r") as f:
+with open("science-notes.txt", "r") as f:
     for line in f:
         print(line.strip())
 print()
