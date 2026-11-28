@@ -25,4 +25,12 @@ print()
 print("     n | recursive calls | deepest depth | loop steps")
 for n in [10, 100, 500]:
     calls, deepest = countdown(n, 1, True)
-    print(f"{n:>6} | {calls:>15} | {deepest:>13} | {countdown_loop:>")
+    print(f"{n:>6} | {calls:>15} | {deepest:>13} | {countdown_loop:>10}")
+print()
+print("Python is limit on waiting calls here:", sys.getrecursionlimit())
+try:
+    calls, deepest = countdown(5000, 1, False)
+    print("countdown(5000) finished:", calls, "calls")
+except RecursionError:
+    print("countdown(5000) -> RecursionError: the call stack is full")
+print("countdown_loop(5000) ->", countdown_loop(5000), "steps (a loop needs no stack)")
